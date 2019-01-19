@@ -4,12 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
+.firebase/
 
 # testing
 /coverage
 
 # production
 /build
+/dist
+/public
 
 # misc
 .DS_Store
@@ -21,3 +24,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# & More
+
+.package-lock.json
+.package.json
+
+# Local Files & Folders
+
+design-insipation/
+package-lock.json
+package.json
