@@ -1,10 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
+import Hero from '../../components/Hero';
+
+const MainCol = styled.div`
+    margin: auto;
+`;
 
 const Forum = () => {
     return (
-        <div>
-            <h1>Forum PAGE</h1>
-        </div>
+        <MainCol>
+            <Hero title='FORUM PAGE' />
+        </MainCol>
     );
 }
 

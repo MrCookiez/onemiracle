@@ -8,7 +8,6 @@ import Blog from './pages/Blog';
 import Forum from './pages/Forum';
 import Lessons from './pages/Lessons';
 import Error from "./pages/Error";
-
 import './assets/css/main.css';
 
 class App extends Component {
@@ -16,9 +15,13 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <div>
+
+          <div id="outer-container">
+            
             <Navigation />
-            <Switch>
+            
+            <main id="page-wrap" className='content'>
+              <Switch>
                 <Route path='/' component={Home} exact >Home</Route>
                 <Route path='/contact' component={Contact} >Contact</Route>
                 <Route path='/about' component={About} >About</Route>
@@ -26,8 +29,13 @@ class App extends Component {
                 <Route path='/forum' component={Forum} >Forum</Route>
                 <Route path='/lessons' component={Lessons} >Lessons</Route>
                 <Route component={Error} />
-            </Switch>
+              </Switch>
+            </main>
+          
           </div>
+          
+        
+          
         </div>
       </BrowserRouter> 
     );

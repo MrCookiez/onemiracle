@@ -7,7 +7,7 @@
             "xlarge": "24px"
         },
     "colors":{
-        "halfGlass": "rgba(255,0,0,0.5)",
+        "halfGlass": "rgba(0,0,0,0.5)",
         "lightGrey": "#ccc",
         "darkGrey": "grey",
         "lightBlue": "#006699",

@@ -1,4 +1,12 @@
-.App {
-    background-color: #006699;
-    color: white;
+/*================================*/
+/*      MAIN THEME STYLES         */
+/*================================*/
+
+a {
+    text-decoration: none;
+}
+.content {
+    padding: 50px;
+    margin: auto;
+    border: 2px solid red;
 }

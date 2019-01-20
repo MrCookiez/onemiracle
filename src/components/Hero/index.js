@@ -1,2 +1,16 @@
-import react from 'react';
-import styled from '/st'
+import React from 'react';
+import styled from 'styled-components';
+
+const Title = ({ title }) => <h1>{title}</h1>;
+
+const HeroTitle = styled(Title)`
+    text-align: center;
+`;
+
+const Hero = (props) =>  {  
+    return (
+        <HeroTitle title={ props.title } />
+    );
+};
+
+export default Hero;
