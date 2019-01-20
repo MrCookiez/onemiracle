@@ -1,0 +1,16 @@
+{
+    "fontSize":{
+            "mini": "8px",
+            "small": "12px",
+            "medium": "16px",
+            "large": "20px",
+            "xlarge": "24px"
+        },
+    "colors":{
+        "halfGlass": "rgba(255,0,0,0.5)",
+        "lightGrey": "#ccc",
+        "darkGrey": "grey",
+        "lightBlue": "#006699",
+        "darkBlue": "#006699"
+    }
+}
