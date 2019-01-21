@@ -39,6 +39,7 @@ var styles = {
     padding: '0.8em'
   },
   bmItem: {
+    fontSize: '16px',
     padding: '1em',
     display: 'block',
     transition: 'opacity 0.3s ease 0.4s, transform 0.3s ease 0.4s',
@@ -46,7 +47,8 @@ var styles = {
     transform: 'translate3d(0px, 0px, 0px)',
     marginLeft: '10px',
     fontWeight: '700',
-    color: '#888'
+    color: '#888',
+    textDecoration: 'none'
   },
   bmItemHover:{
     color: 'red'

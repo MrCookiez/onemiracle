@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../../../assets/images/logos/react.svg';
+import logo from '../../../assets/images/logos/visual-studio-code.svg';
 import { NavLink } from 'react-router-dom';
 import { elastic as Menu } from 'react-burger-menu';
 import styles from './styles'; 
@@ -24,6 +24,7 @@ const Sidebar = () =>  {
             <NavLink to="/blog">BLOG</NavLink>
             <NavLink to="/about">ABOUT</NavLink>
             <NavLink to="/contact">ΕΠΙΚΟΙΚΩΝΙΑ</NavLink>
+            <NavLink to="/challenge">CHALLENGE</NavLink>
                  
             </Menu>
         );

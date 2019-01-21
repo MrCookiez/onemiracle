@@ -1,8 +1,13 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Play:400,700&subset=greek');
+
 /*================================*/
 /*      MAIN THEME STYLES         */
 /*================================*/
+
 body {
-    background: rgb(255, 253, 253);
+    font-family: Play, 'sans-serif';
+    background-color: rgb(255, 253, 253);
     color: #006699;
 }
 a {
@@ -11,4 +16,8 @@ a {
 .content {
     margin: auto;
     border: 2px solid red;
+}
+
+.bmItem a: hover {
+    color: gold;
 }
