@@ -1,10 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+import Hero from '../../components/Hero';
+
+const MainCol = styled.div`
+    margin: auto;
+    text-align: center;
+`;
 
 const Blog = () => {
     return (
-        <div>
-            <h1>Blog PAGE</h1>
-        </div>
+        <MainCol>
+            <Hero title='BLOG PAGE' />
+        </MainCol>
     );
 }
 

@@ -9,7 +9,9 @@ const HeroTitle = styled(Title)`
 
 const Hero = (props) =>  {  
     return (
-        <HeroTitle title={ props.title } />
+        <div>
+            <HeroTitle title={ props.title } />
+        </div>
     );
 };
 

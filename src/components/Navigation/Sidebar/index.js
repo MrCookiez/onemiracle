@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../../../assets/images/logos/redux.svg';
+import logo from '../../../assets/images/logos/react.svg';
 import { NavLink } from 'react-router-dom';
 import { elastic as Menu } from 'react-burger-menu';
 import styles from './styles'; 
@@ -18,12 +18,12 @@ const Sidebar = () =>  {
 
             <Logo src={logo} alt='logo' />
             
-            <NavLink to="/" className="bm-item"><i className="fa fa-fw fa-newspaper-o"></i>Home</NavLink>
-            <NavLink to="/lessons">Lessons</NavLink>
-            <NavLink to="/forum">Forum</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/" className="bm-item"><i className="fa fa-fw fa-newspaper-o"></i>ΑΡΧΙΚΗ</NavLink>
+            <NavLink to="/lessons">ΜΑΘΗΜΑΤΑ</NavLink>
+            <NavLink to="/forum">FORUM</NavLink>
+            <NavLink to="/blog">BLOG</NavLink>
+            <NavLink to="/about">ABOUT</NavLink>
+            <NavLink to="/contact">ΕΠΙΚΟΙΚΩΝΙΑ</NavLink>
                  
             </Menu>
         );

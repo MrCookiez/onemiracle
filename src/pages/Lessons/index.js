@@ -1,10 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+import Hero from '../../components/Hero';
+
+const MainCol = styled.div`
+    margin: auto;
+    text-align: center;
+`;
 
 const Lessons = () => {
     return (
-        <div>
-            <h1>Lessons PAGE</h1>
-        </div>
+        <MainCol>
+            <Hero title='ΜΑΘΗΜΑΤΑ' />
+        </MainCol>
     );
 }
 

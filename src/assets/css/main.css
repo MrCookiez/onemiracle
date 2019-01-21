@@ -1,12 +1,14 @@
 /*================================*/
 /*      MAIN THEME STYLES         */
 /*================================*/
-
+body {
+    background: rgb(255, 253, 253);
+    color: #006699;
+}
 a {
     text-decoration: none;
 }
 .content {
-    padding: 50px;
     margin: auto;
     border: 2px solid red;
 }

@@ -19,15 +19,15 @@ class App extends Component {
           <div id="outer-container">
             
             <Navigation />
-            
+
             <main id="page-wrap" className='content'>
               <Switch>
-                <Route path='/' component={Home} exact >Home</Route>
-                <Route path='/contact' component={Contact} >Contact</Route>
+                <Route path='/' component={Home} exact >ΑΡΧΙΚΗ</Route>
+                <Route path='/contact' component={Contact} >ΕΠΙΚΟΙΝΩΝΙΑ</Route>
                 <Route path='/about' component={About} >About</Route>
                 <Route path='/blog' component={Blog} >Blog</Route>
                 <Route path='/forum' component={Forum} >Forum</Route>
-                <Route path='/lessons' component={Lessons} >Lessons</Route>
+                <Route path='/lessons' component={Lessons} >ΜΑΘΗΜΑΤΑ</Route>
                 <Route component={Error} />
               </Switch>
             </main>
