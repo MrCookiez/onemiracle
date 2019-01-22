@@ -1,3 +1,5 @@
+import Media from "react-media";
+
 var styles = {
 
   bmBurgerButton: {
@@ -8,31 +10,33 @@ var styles = {
     top: '36px'
   },
   bmBurgerBars: {
-    background: '#373a47'
+    background: '#29A1CA'
   },
   bmBurgerBarsHover: {
-    background: '#a90000',
+    background: 'red',
   },
   bmCrossButton: {
     height: '24px',
     width: '24px'
   },
   bmCross: {
-    background: '#bdc3c7'
+    background: '#bdc3c7',   
   },
   bmMenuWrap: {
     position: 'fixed',
     height: '100%',
-   
+    width: '350px',
   },
   bmMenu: {
     background: '#373a47',
     padding: '2.5em 1.5em 0',
     fontSize: '1.15em',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    width: '220px',
   },
   bmMorphShape: {
-    fill: '#373a47'
+    fill: '#373a47',
+    width: '210px',
   },
   bmItemList: {
     color: '#b8b7ad',
@@ -47,15 +51,12 @@ var styles = {
     transform: 'translate3d(0px, 0px, 0px)',
     marginLeft: '10px',
     fontWeight: '700',
-    color: '#888',
-    textDecoration: 'none'
-  },
-  bmItemHover:{
-    color: 'red'
+    color: '#29A1CA',
+    textDecoration: 'none',
+    maxWidth: '180px', 
   },
   bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)'
-  }
+    background: 'rgba(0, 0, 0,0.5)'
+  },
 };
-
 export default styles;
