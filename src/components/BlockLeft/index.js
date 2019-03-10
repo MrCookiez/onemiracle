@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 
 import * as styles from './styles';
 import htmlLogo from '../../assets/images/logos/photoshop-cc.svg';
-import * as images from '../../assets/images/logos/';
 
 const StyledBlockLeft = styled.div`
     ${styles.styledBlockLeft};
@@ -21,6 +20,7 @@ const StyledTechLogo = styled.div`
 const StyledText = styled.div`
     ${styles.stylesText};
 `;
+
 const StyledLogo = styled.img`
     ${styles.stylesImg};
 `;
@@ -40,7 +40,7 @@ const BlockLeft = ({ heading, paragraph, techLogo, link }) => {
             <StyledTechLogo>
                 <NavLink to='/'>
                     {link}
-                    <StyledLogo src={ techLogo } alt="#" />
+                    <StyledLogo src={ htmlLogo } alt="#" />
                 </NavLink>
             </StyledTechLogo>
             <StyledText>

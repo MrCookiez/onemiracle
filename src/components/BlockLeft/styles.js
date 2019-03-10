@@ -20,22 +20,11 @@ const styledSubContainer = css`
         display: block;
     }
 `;
+
 const stylesText = css`
     width: 70%;
     @media(max-width: 680px){
         width: 100%;
-    }
-`;
-
-const styledTechLogo = css`
-    float: left;
-    margin-right: 20px;
-`;
-const stylesImg = css`
-    width: 100%;
-    max-width: 200px;
-    @media(max-width: 680px){
-        max-width: 100px
     }
 `;
 
@@ -52,5 +41,26 @@ const styledParagraph = css`
     letter-spacing: 1px;
     line-height: 1.1;
 `;
+
+const styledTechLogo = css`
+    width: 30%;
+    @media(max-width: 680px){
+        width: 100%;
+    }
+`;
+
+const stylesImg = css`
+    width: 100%;
+    max-width: 200px;
+    @media(max-width: 680px){
+        max-width: 100px
+    }
+`;
+
+
+
+
+
+
 
 export { styledBlockLeft, styledSubContainer, stylesText, styledHeading, styledParagraph, styledTechLogo, stylesImg };

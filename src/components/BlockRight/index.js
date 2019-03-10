@@ -16,6 +16,10 @@ const StyledTechLogo = styled.div`
     ${styles.styledTechLogo};
 `;
 
+const StyledLogo = styled.img`
+    ${styles.stylesImg};
+`;
+
 const StyledHeading = styled.h3`
     ${styles.styledHeading};
 `;
@@ -36,10 +40,10 @@ const BlockLeft = ({ heading, paragraph, techLogo, link }) => {
                 <StyledHeading>{heading}</StyledHeading>
                 <StyledParagraph>{paragraph}</StyledParagraph>
            </StyledText>
-            <StyledTechLogo>
+           <StyledTechLogo>
                 <NavLink to='/'>
                     {link}
-                    <img src={ cssLogo } alt="#" width="200"/>
+                    <StyledLogo src={ cssLogo } alt="#" />
                 </NavLink>
             </StyledTechLogo>
         </StyledSubContainer>

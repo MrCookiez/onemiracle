@@ -10,6 +10,7 @@ const styledBlockRight = css`
 `;
 
 const styledSubContainer = css`
+    width: 60%;
     text-align: right;
     margin: auto;
     display: flex;
@@ -41,11 +42,19 @@ const styledParagraph = css`
 `;
 
 const styledTechLogo = css`
-    margin-right: 20px;
+    margin-left: 20px;
     width: 30%;
     @media(max-width: 680px){
         width: 100%;
     }
 `;
 
-export { styledBlockRight, styledSubContainer, stylesText, styledHeading, styledParagraph, styledTechLogo };
+const stylesImg = css`
+    width: 100%;
+    max-width: 200px;
+    @media(max-width: 680px){
+        max-width: 100px
+    }
+`;
+
+export { styledBlockRight, styledSubContainer, stylesText, styledHeading, styledParagraph, styledTechLogo, stylesImg };

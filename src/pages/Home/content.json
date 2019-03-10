@@ -10,11 +10,38 @@
     },
     "content": [
         {
+            "id": "card-block",
+            "type": "cards",
+            "cards": [
+                {
+                    "type": "card",
+                    "img": "",
+                    "heading": "Learn",
+                    "paragraph": "LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn",
+                    "to": "/learn"
+                },
+                {
+                    "type": "card",
+                    "img": "",
+                    "heading": "Teach",
+                    "paragraph": "TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach",
+                    "to": "/learn"
+                },
+                {
+                    "type": "card",
+                    "img": "",
+                    "heading": "Work",
+                    "paragraph": "Freelance - Job Guide",
+                    "to": "/learn"
+                }
+            ]
+        },
+        {
             "id": "block-one",
             "type": "left",
             "techLogo": "htmlLogo",
             "heading": "Learn HTML",
-            "paragraph": "HTML Stands for Hyper Text Markup Language which is the first thing you need to learn as it used everywhere in the web development. HTML is the skeleton for all websites. First thing first lets learn HMTL!",
+            "paragraph": "Το HTML σημαίνει Hyper Text Markup Language. Η HTML είναι η τυπική γλώσσα σήμανσης για ιστοσελίδες. Τα στοιχεία HTML είναι τα δομικά στοιχεία των σελίδων HTML. Τα στοιχεία HTML αντιπροσωπεύονται από ετικέτες <>",
             "to": "/contact"
         },
         {
