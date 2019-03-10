@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 import * as styles from './styles';
-import htmlLogo from '../../assets/images/logos/photoshop-cc.svg';
+import htmlLogo from '../../assets/images/logos/html5.svg';
 
 const StyledBlockLeft = styled.div`
     ${styles.styledBlockLeft};
@@ -33,9 +33,13 @@ const StyledParagraph = styled.p`
     ${styles.styledParagraph};
 `;
 
-const BlockLeft = ({ heading, paragraph, techLogo, link }) => {
+const StyledNavLink = styled(NavLink)`
+    ${styles.styledNavLink};
+`;
+
+const BlockLeft = ({ id, heading, paragraph, techLogo, link, to }) => {
    return (
-    <StyledBlockLeft>
+    <StyledBlockLeft id={id} >
         <StyledSubContainer>
             <StyledTechLogo>
                 <NavLink to='/'>
@@ -46,6 +50,7 @@ const BlockLeft = ({ heading, paragraph, techLogo, link }) => {
             <StyledText>
                 <StyledHeading>{heading}</StyledHeading>
                 <StyledParagraph>{paragraph}</StyledParagraph>
+                <StyledNavLink to={to}>ΠΕΡΙΣΣΟΤΕΡΑ</StyledNavLink>
             </StyledText>
         </StyledSubContainer>
     </StyledBlockLeft>

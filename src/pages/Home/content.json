@@ -6,7 +6,8 @@
     "hero": {
         "title": "Καλως ηρθατε στο <span style='color:#FFB530;'>one miracle</span>",
         "subTitle": "Το ταξιδη στη γνωση ξεκινα",
-        "buttonTitle": "Explore more"
+        "buttonTitle": "Explore more",
+        "section": "#block-three"
     },
     "content": [
         {
@@ -16,21 +17,21 @@
                 {
                     "type": "card",
                     "img": "",
-                    "heading": "Learn",
+                    "heading": "ΜΑΘΕ",
                     "paragraph": "LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn",
                     "to": "/learn"
                 },
                 {
                     "type": "card",
                     "img": "",
-                    "heading": "Teach",
+                    "heading": "ΔΙΔΑΞΕ",
                     "paragraph": "TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach",
                     "to": "/learn"
                 },
                 {
                     "type": "card",
                     "img": "",
-                    "heading": "Work",
+                    "heading": "ΕΡΓΑΣΟΥ",
                     "paragraph": "Freelance - Job Guide",
                     "to": "/learn"
                 }
@@ -40,25 +41,25 @@
             "id": "block-one",
             "type": "left",
             "techLogo": "htmlLogo",
-            "heading": "Learn HTML",
-            "paragraph": "Το HTML σημαίνει Hyper Text Markup Language. Η HTML είναι η τυπική γλώσσα σήμανσης για ιστοσελίδες. Τα στοιχεία HTML είναι τα δομικά στοιχεία των σελίδων HTML. Τα στοιχεία HTML αντιπροσωπεύονται από ετικέτες <>",
-            "to": "/contact"
+            "heading": "ΜΑΘΗΜΑΤΑ - HTML",
+            "paragraph": "Το HTML σημαίνει Hyper Text Markup Language. Η HTML είναι η τυπική γλώσσα σήμανσης για ιστοσελίδες. Τα στοιχεία HTML είναι τα δομικά στοιχεία των σελίδων HTML. Τα στοιχεία HTML αντιπροσωπεύονται από ετικέτες </>",
+            "to": "/html-lessons"
         },
         {
             "id": "block-two",
             "type": "right",
-            "heading": "Heading 2 - RIGHT",
+            "heading": "ΜΑΘΗΜΑΤΑ - CSS",
             "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
             "techLogo": "",
-            "to": "/"
+            "to": "/css-lessons"
         },
         {
             "id": "block-three",
             "type": "left",
-            "heading": "Heading 3 - LEFT",
+            "heading": "ΜΑΘΗΜΑΤΑ - JAVASCRIPT",
             "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
             "techLogo": "",
-            "to": "/forum"
+            "to": "/javascript-lessons"
         }
     ]
 

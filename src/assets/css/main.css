@@ -3,7 +3,9 @@
 /*================================*/
 /*      MAIN THEME STYLES         */
 /*================================*/
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Play, 'sans-serif';
     color: #006699;

@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles.css';
 
-const JumpArrow = () => (
-    <section id="section04">
-        <a href="#section05"><span></span></a>
-    </section>
+const JumpArrow = ({ section }) => (
+    <div class="jumpArrow">
+        <a href='#block-three'><span></span></a>
+    </div>
 );
 
 export default JumpArrow;

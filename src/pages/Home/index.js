@@ -21,7 +21,8 @@ const {
     hero: {
         title,
         subTitle,
-        buttonTitle
+        buttonTitle,
+        section
     },
     content,
 
