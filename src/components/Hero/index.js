@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import * as styles from './styles';
-import HeroButton from './components/HeroButton';
+import Button from './components/HeroButton';
 
 const Title = ({ title }) => <h1>{title}</h1>;
 
@@ -9,36 +9,27 @@ const HomeHero = styled.div`
     ${styles.stylesHero};
 `;
 
-const HeroTitle = styled(Title)`
+const CurrentLocation = styled(Title)`
+    width: '100%';
     text-align: center;
+    display: block;
 `;
-const Container = styled.div`
-    ${styles.styledContainer};
-`;
-const SectionA = styled.div`
-`;
-const SectionB = styled.div`
-`;
-const SectionC = styled.div`
-`;
-const SectionD = styled.div`
-`;
-const SectionE = styled.div`
+const HeroButton = styled(Button)`
+    ${styles.stylesButton};
 `;
 
-const Hero = (props) =>  {  
+const Hero = ({ title, label }) => {
+
+    let mainHeader =  <span dangerouslySetInnerHTML={{__html: title}} />;
+
     return (
         <Fragment>
-            
             <HomeHero>
-                <HeroTitle title={ props.title } />
+                <Title title={mainHeader} />
+                {/* <HeroButton text={label} /> */}
             </HomeHero>
-            <HeroButton/>
-            <Container>
-                SECTION CONTAINER
-            </Container>
+            {/* <CurrentLocation title={title} /> */}
         </Fragment>
-
     );
 };
 

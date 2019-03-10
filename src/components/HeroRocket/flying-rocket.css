@@ -1,11 +1,5 @@
-html, body {
-  height: 100%;
-  /* background: #282F35; */
-  overflow: hidden;
-}
-
 body {
-  overflow: hidden;
+  /* //overflow: hidden; */
 }
 
 svg {

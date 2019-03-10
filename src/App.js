@@ -7,20 +7,17 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Forum from './pages/Forum';
 import Lessons from './pages/Lessons';
-import Error from "./pages/Error";
+import NotFound from "./pages/NotFound";
+import Footer from './components/Footer';
 import './assets/css/main.css';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-
-          <div id="outer-container">
-            
+        <BrowserRouter>
+        <div className="App">        
             <Navigation />
-
-            <main id="page-wrap" className='content'>
+            <div>
               <Switch>
                 <Route path='/' component={Home} exact >ΑΡΧΙΚΗ</Route>
                 <Route path='/contact' component={Contact} >ΕΠΙΚΟΙΝΩΝΙΑ</Route>
@@ -28,16 +25,12 @@ class App extends Component {
                 <Route path='/blog' component={Blog} >Blog</Route>
                 <Route path='/forum' component={Forum} >Forum</Route>
                 <Route path='/lessons' component={Lessons} >ΜΑΘΗΜΑΤΑ</Route>
-                <Route component={Error} />
+                <Route component={NotFound} />
               </Switch>
-            </main>
-          
-          </div>
-          
-        
-          
+            </div>
+            <Footer />
         </div>
-      </BrowserRouter> 
+        </BrowserRouter>
     );
   }
 }

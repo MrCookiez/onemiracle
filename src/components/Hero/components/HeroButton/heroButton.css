@@ -1,39 +1,103 @@
-.svg-wrapper {
-    height: 60px;
-      margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 320px;
-  }
-  
-  .shape {
-    fill: transparent;
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
-    stroke: #19f6e8;
-  }
-  
-  .text {
-    color: #fff;
-    font-family: 'Roboto Condensed';
-    font-size: 22px;
-    letter-spacing: 8px;
-    line-height: 32px;
-    position: relative;
-    top: -48px;
-  }
-  
-  @keyframes draw {
-    0% {
-      stroke-dasharray: 140 540;
-      stroke-dashoffset: -474;
-      stroke-width: 8px;
-    }
-    100% {
-      stroke-dasharray: 760;
-      stroke-dashoffset: 0;
-      stroke-width: 2px;
-    }
-  }
+/* Theme base - */
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+
+.action {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: none;
+	margin: 2rem;
+	color: var(--color-action);
+	border: 0;
+	padding: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.action:focus {
+	outline: none;
+}
+
+.theme-7 {
+	--color-item-bg: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+    --color-action: #e2405b;
+    --color-button-bg: #e2405b;
+    --color-button-text: #e9e9e9;
+    --button-padding: 1.8rem 4.5rem;
+    --radius-button: 0;
+    --border-button: 0;
+}
+
+
+@media screen and (min-width: 50em) {
+	.codrops-header {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		min-height: 100vh;
+	}
+	.codrops-header__title {
+		font-size: 3rem;
+	}
+	.codrops-header::after {
+		content: 'Scroll';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1rem;
+		color: var(--color-scroll);
+	}
+	.github {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 2rem;
+	}
+	.grid {
+		display: grid;
+		grid-gap: 22px;
+		grid-template-columns: repeat(2,calc(50vmax - 11px));
+	}
+	.grid__item {
+		height: 50vmax;
+		width: 100%;
+		padding: 1.5rem;
+	}
+	.codrops-header {
+		font-size: 100%;
+		padding: 0 0 2rem 0;
+		border: 22px solid black;
+	}
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../../../assets/images/onemiracle.svg';
+import logo from '../../../assets/images/onemiracleYellow.svg';
 import { NavLink } from 'react-router-dom';
 import { elastic as Menu } from 'react-burger-menu';
 import styles from './styles'; 

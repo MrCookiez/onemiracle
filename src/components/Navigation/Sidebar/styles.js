@@ -1,7 +1,6 @@
 import Media from "react-media";
 
 var styles = {
-
   bmBurgerButton: {
     position: 'fixed',
     width: '36px',
@@ -25,7 +24,7 @@ var styles = {
   bmMenuWrap: {
     position: 'fixed',
     height: '100%',
-    width: '350px',
+    width: '280px',
   },
   bmMenu: {
     background: '#373a47',

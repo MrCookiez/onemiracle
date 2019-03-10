@@ -1,6 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import Hero from '../../components/Hero';
+// Content
+import data from './content.json';
+// Styles
+import * as styles from './styles';
+
+const {
+    page,
+    meta: {
+        title,
+        description
+    },
+    content
+
+} = data;
 
 const MainCol = styled.div`
     margin: auto;
@@ -10,7 +24,7 @@ const MainCol = styled.div`
 const Forum = () => {
     return (
         <MainCol>
-            <Hero title='FORUM PAGE' />
+            <Hero title={title} />
         </MainCol>
     );
 }
