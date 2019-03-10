@@ -1,5 +1,3 @@
-import Media from "react-media";
-
 var styles = {
   bmBurgerButton: {
     position: 'fixed',
@@ -9,7 +7,7 @@ var styles = {
     top: '36px'
   },
   bmBurgerBars: {
-    background: '#29A1CA'
+    background: 'rgba(255,255,255,0.3)'
   },
   bmBurgerBarsHover: {
     background: 'red',

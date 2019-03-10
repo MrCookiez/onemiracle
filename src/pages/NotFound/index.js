@@ -6,14 +6,18 @@ import HeroRocket from '../../components/HeroRocket';
 const MainCol = styled.div`
     margin: auto;
     text-align: center;
+
+    h1 {
+        color: white;
+        margin: auto;
+        text-align: center;
+    }
 `;
 
 const NotFound = () => {
     return (
         <MainCol>
-            <Hero title='PAGE LOST IN SPACE' />
-            <br/>
-            <HeroRocket/>
+           <HeroRocket/>
         </MainCol>
     );
 }

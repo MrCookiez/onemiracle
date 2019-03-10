@@ -1,31 +1,35 @@
 {
     "page": "Home",
     "meta": {
-        "title": "Καλως ηρθατε στο <span style='color:#FFB530;'>one miracle</span>",
         "description": "Welcome to One Miracle - here you can find web development courses for beginners on HTML, CSS, JS, PHP and mySQL"
     },
     "hero": {
+        "title": "Καλως ηρθατε στο <span style='color:#FFB530;'>one miracle</span>",
+        "subTitle": "Το ταξιδη στη γνωση ξεκινα",
         "buttonTitle": "Explore more"
     },
     "content": [
         {
             "id": "block-one",
             "type": "left",
-            "techLogo": "",
-            "paragraph": "function bubbleSort(items) { <br /> &nbsp&nbsp var length = items.length; //Number of passes <br /> for (var i = 0; i < length; i++) { //Notice that j < (length - i) for (var j = 0; j < (length - i - 1); j++) { //Compare the adjacent positions if(items[j] > items[j+1]) { //Swap the numbers var tmp = items[j]; //Temporary variable to hold the current number items[j] = items[j+1]; //Replace current number with adjacent number items[j+1] = tmp; //Replace adjacent number with current number}}}}",
+            "techLogo": "htmlLogo",
+            "heading": "Learn HTML",
+            "paragraph": "HTML Stands for Hyper Text Markup Language which is the first thing you need to learn as it used everywhere in the web development. HTML is the skeleton for all websites. First thing first lets learn HMTL!",
             "to": "/contact"
         },
         {
             "id": "block-two",
             "type": "right",
-            "paragraph": "RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT, RIGHT",
+            "heading": "Heading 2 - RIGHT",
+            "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
             "techLogo": "",
             "to": "/"
         },
         {
             "id": "block-three",
             "type": "left",
-            "paragraph": "LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT, LEFT",
+            "heading": "Heading 3 - LEFT",
+            "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
             "techLogo": "",
             "to": "/forum"
         }
