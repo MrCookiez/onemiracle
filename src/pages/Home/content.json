@@ -11,31 +11,28 @@
     },
     "content": [
         {
-            "id": "card-block",
-            "type": "cards",
-            "cards": [
-                {
-                    "type": "card",
-                    "img": "",
-                    "heading": "ΜΑΘΕ",
-                    "paragraph": "LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn",
-                    "to": "/learn"
-                },
-                {
-                    "type": "card",
-                    "img": "",
-                    "heading": "ΔΙΔΑΞΕ",
-                    "paragraph": "TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach",
-                    "to": "/learn"
-                },
-                {
-                    "type": "card",
-                    "img": "",
-                    "heading": "ΕΡΓΑΣΟΥ",
-                    "paragraph": "Freelance - Job Guide",
-                    "to": "/learn"
-                }
-            ]
+            "id": "1",
+            "type": "card",
+            "cardImg": "none",
+            "cardTitle": "ΜΑΘΕ",
+            "cardText": "LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn",
+            "cardLink": "/learn"
+        },
+        {
+            "id": "2",
+            "type": "card",
+            "cardImg": "",
+            "cardTitle": "ΔΙΔΑΞΕ",
+            "cardText": "TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach",
+            "cardLink": "/learn"
+        },
+        {
+            "id": "3",
+            "type": "card",
+            "cardImg": "",
+            "cardTitle": "ΕΡΓΑΣΙΑ",
+            "cardText": "Freelance - Job Guide",
+            "cardLink": "/learn"
         },
         {
             "id": "block-one",
