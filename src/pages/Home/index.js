@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import BlockContainer from '../../components/BlockContainer';
 import Hero from '../../components/Hero';
-import * as images from '../../assets/images/logos';
 // Content
 import data from './content.json';
 // Styles

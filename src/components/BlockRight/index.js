@@ -48,7 +48,7 @@ const BlockLeft = ({ id, heading, paragraph, techLogo, link, to }) => {
            <StyledTechLogo>
                 <NavLink to='/'>
                     {link}
-                    <StyledLogo src={ cssLogo } alt="#" />
+                    <StyledLogo src={ techLogo } alt="#" />
                 </NavLink>
             </StyledTechLogo>
         </StyledSubContainer>

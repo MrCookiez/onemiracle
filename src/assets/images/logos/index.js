@@ -4,10 +4,12 @@ import js from './js.svg';
 import php from './php.svg';
 import mysql from './mysql.svg';
 
-export {
+const images = [
     html5,
     css3,
     js,
     php,
     mysql
-}
+];
+
+export default images;
