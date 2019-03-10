@@ -4,7 +4,7 @@ import * as styles from './styles';
 
 const BlockRight = () => (
     <section>
-       <h1>BLOCK RIGHT</h1>
+       <span>BLOCK RIGHT</span>
     </section>
 );
 

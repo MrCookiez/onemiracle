@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import * as styles from './styles';
 import Button from './components/HeroButton';
 
-const Title = ({ title }) => <h1>{title}</h1>;
+const Title = ({ title }) => <span>{title}</span>;
 
 const HomeHero = styled.div`
     ${styles.stylesHero};
