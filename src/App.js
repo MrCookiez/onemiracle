@@ -8,7 +8,6 @@ import Blog from './pages/Blog';
 import Forum from './pages/Forum';
 import Lessons from './pages/Lessons';
 import NotFound from "./pages/NotFound";
-import Footer from './components/Footer';
 import './assets/css/main.css';
 
 class App extends Component {
@@ -28,7 +27,6 @@ class App extends Component {
                 <Route component={NotFound} />
               </Switch>
             </div>
-            <Footer />
         </div>
         </BrowserRouter>
     );

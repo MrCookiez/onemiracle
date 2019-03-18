@@ -11,10 +11,9 @@ const BlockContainer = ({ data }) => (
         <div>
         { data.map((item, index )=> {
                 return (
-                    <div key={index}>
-                        { item.type === "card" &&<Card key={index} id={item.id} cardImg={cardImages[0]} cardTitle={item.cardTitle} cardText={item.cardText} cardLink={item.cardLink} />}
+                    <div>
                         { item.type === "left" && <BlockLeft key={index} id={item.id} heading={item.heading} paragraph={item.paragraph} techLogo={images[item.id]}  to={item.to} /> }
-                        { item.type === "right" && <BlockRight key={index} id={item.id} heading={item.heading} paragraph={item.paragraph} techLogo={images[item.id]} to={item.to} /> }
+                        { item.type === "right" && <BlockRight key={index} id={item.id} heading={item.heading} paragraph={item.paragraph} techLogo={images[item.id]} to={item.to} /> } */}
                     </div>
                 )  
             } 

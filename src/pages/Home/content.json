@@ -9,14 +9,14 @@
         "buttonTitle": "Explore more",
         "section": "#block-three"
     },
-    "content": [
+    "cards":[
         {
             "id": "0",
             "type": "card",
             "cardImg": "",
             "cardTitle": "ΜΑΘΕ",
             "cardText": "LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn",
-            "cardLink": "/learn"
+            "to": "/learn"
         },
         {
             "id": "1",
@@ -24,7 +24,7 @@
             "cardImg": "",
             "cardTitle": "ΔΙΔΑΞΕ",
             "cardText": "TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach",
-            "cardLink": "/learn"
+            "to": "/learn"
         },
         {
             "id": "2",
@@ -32,8 +32,10 @@
             "cardImg": "",
             "cardTitle": "ΕΡΓΑΣΙΑ",
             "cardText": "Freelance - Job Guide",
-            "cardLink": "/learn"
-        },
+            "to": "/learn"
+        }
+    ],
+    "content": [
         {
             "id": "0",
             "type": "left",
@@ -61,7 +63,7 @@
         {
             "id": "3",
             "type": "right",
-            "heading": "ΜΑΘΗΜΑΤΑ - JAVASCRIPT",
+            "heading": "ΜΑΘΗΜΑΤΑ - PHP",
             "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
             "techLogo": "jsLogo",
             "to": "/javascript-lessons"
@@ -69,7 +71,7 @@
         {
             "id": "4",
             "type": "left",
-            "heading": "ΜΑΘΗΜΑΤΑ - JAVASCRIPT",
+            "heading": "ΜΑΘΗΜΑΤΑ - MySQL",
             "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
             "techLogo": "jsLogo",
             "to": "/javascript-lessons"

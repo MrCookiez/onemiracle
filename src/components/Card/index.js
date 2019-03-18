@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import * as styles from './styles';
 
-const Card = ({ cardImg, cardTitle, cardText, cardLink }) => (
+const Card = ({ cardImg, cardTitle, cardText, to }) => (
     <div className="card-container">
         <div className="img-container">
             <img scr={cardImg} alt="This is an coolImage" />

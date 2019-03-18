@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 const JumpArrow = ({ section }) => (
-    <div className="jumpArrow">
+    <div classNamegit="jumpArrow">
         <a href='#block-three'><span></span></a>
     </div>
 );
