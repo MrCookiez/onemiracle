@@ -13,15 +13,15 @@
         {
             "id": "0",
             "type": "card",
-            "cardImg": "",
+            "cardImg": "learn",
             "cardTitle": "ΜΑΘΕ",
-            "cardText": "LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn",
+            "cardText": "LearnLearnLearnLearn LearnLearnLearnLearn LearnLearnLearnLearn LearnLearnLearnLearn LearnLearnLearnLearn LearnLearnLearnLearn",
             "to": "/learn"
         },
         {
             "id": "1",
             "type": "card",
-            "cardImg": "",
+            "cardImg": "teach",
             "cardTitle": "ΔΙΔΑΞΕ",
             "cardText": "TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach",
             "to": "/learn"

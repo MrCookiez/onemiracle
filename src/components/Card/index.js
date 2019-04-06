@@ -2,17 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-import * as styles from './styles';
+import styles from './styles';
+
+const CardContainer = styled.div`
+    ${styles.styledCardContainer};
+`;
 
 const Card = ({ cardImg, cardTitle, cardText, to }) => (
-    <div className="card-container">
+    <CardContainer>
         <div className="img-container">
-            <img scr={cardImg} alt="This is an coolImage" />
+            <img src={cardImg} alt="This is a coolImage" />
         </div>
         <h3>{cardTitle}</h3>
         <p>{cardText}</p>
         <NavLink to='/'>ΠΕΡΙΣΣΟΤΕΡΑ</NavLink>
-    </div>
+    </CardContainer>
 );
 
 export default Card;

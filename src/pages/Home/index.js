@@ -12,12 +12,12 @@ import data from './content.json';
 import images from './images';
 // Styles
 import * as styles from './styles';
-import {card1} from './images/learn.jpg';;
 
 const {
     blockImages,
-    cardImages
+    cardImages,
 } = images;
+
 
 const Page = styled.div`
     text-align: center;
