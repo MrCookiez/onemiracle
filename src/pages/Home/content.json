@@ -15,7 +15,7 @@
             "type": "card",
             "cardImg": "learn",
             "cardTitle": "ΜΑΘΕ",
-            "cardText": "LearnLearnLearnLearn LearnLearnLearnLearn LearnLearnLearnLearn LearnLearnLearnLearn LearnLearnLearnLearn LearnLearnLearnLearn",
+            "cardText": "Learn Learn Learn Learn Learn Learn Learn Learn Learn Learn Learn Learn",
             "to": "/learn"
         },
         {
@@ -23,7 +23,7 @@
             "type": "card",
             "cardImg": "teach",
             "cardTitle": "ΔΙΔΑΞΕ",
-            "cardText": "TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach",
+            "cardText": "Teach Teach Teach Teach Teach Teach Teach Teach Teach Teach Teach Teach",
             "to": "/learn"
         },
         {
@@ -31,7 +31,7 @@
             "type": "card",
             "cardImg": "",
             "cardTitle": "ΕΡΓΑΣΙΑ",
-            "cardText": "Freelance - Job Guide",
+            "cardText": "Freelance - Job Guide Freelance - Job Guide Freelance - Job Guide ",
             "to": "/learn"
         }
     ],
