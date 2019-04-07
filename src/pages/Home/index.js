@@ -14,6 +14,7 @@ import * as styles from './styles';
 
 const {
     blockImages,
+    cardImages,
 } = images;
 
 
@@ -58,6 +59,7 @@ const Home = () => (
                 {cards.map((card, index) => {
                     return (
                         <CardRow key={index}>
+
                             <Card  cardTitle={card.cardTitle} cardText={card.cardText} />
                         </CardRow>
                     )    

@@ -1,7 +1,6 @@
 import { css } from 'styled-components';
 import images from '../../assets/images/cards';
 
-
 const styledCardContainer = css`
     max-width: 350px;
     background: url(${images[0]}) 50% no-repeat;
@@ -11,19 +10,19 @@ const styledCardContainer = css`
     border: 10px solid rgba(48,48,48,0.5);;
     transition: all .6s;
     color: #fff;
+    -webkit-box-shadow: inset 0px 30px 224px 23px rgba(0,0,0,0.52);
+    -moz-box-shadow: inset 0px 30px 224px 23px rgba(0,0,0,0.52);
+    box-shadow: inset 0px 30px 224px 23px rgba(0,0,0,0.52);
+
     img {
         width: 100%;
     }
-
 
     :hover {
         cursor: pointer;
         background: url(${images[2]}) 100% no-repeat;
         background-size: cover;
         border: 10px solid rgba(48,48,48,0.5);
-        -webkit-box-shadow: 10px 10px 14px -11px rgba(255,255,255,.5);
-        -moz-box-shadow: 10px 10px 14px -11px rgba(255,255,255,.5);
-        box-shadow: 10px 10px 14px -11px rgba(255,255,255,.5);
     }
 `;
 
@@ -61,4 +60,28 @@ const styledCardDesc = css`
     }
 `;
 
-export default { styledCardContainer, styledCardBlock, styledTitle, styledCardDesc };
+const styledLink = css`
+    color: #555;
+    transition: all .6s;  
+    :after {
+        content: '';
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 6px;
+        height: 6px;
+        border-top: 2px solid #FFB530;
+        border-right: 2px solid #FFB530;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    @media(max-width: 768px){
+        display: none;
+    }
+`;
+
+export default { styledCardContainer, styledCardBlock, styledTitle, styledCardDesc, styledLink };

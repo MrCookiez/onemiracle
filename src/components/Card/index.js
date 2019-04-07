@@ -20,9 +20,7 @@ const StyledDesc = styled.p`
 `;
 
 const StyledLink = styled(NavLink)`
-    @media(max-width: 768px){
-        display: none;
-    }
+    ${styles.styledLink}
 `;
 
 const Card = ({ cardImg, cardTitle, cardText, to }) => (
