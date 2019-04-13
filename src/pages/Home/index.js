@@ -59,7 +59,7 @@ const Home = () => (
                 {cards.map((card, index) => {
                     return (
                         <CardRow key={index}>
-                            <Card  cardTitle={card.cardTitle} cardText={card.cardText} />
+                            <Card id={card.id} cardTitle={card.cardTitle} cardText={card.cardText} />
                         </CardRow>
                     )    
                 })}

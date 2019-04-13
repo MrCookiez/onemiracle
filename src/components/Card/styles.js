@@ -1,10 +1,7 @@
 import { css } from 'styled-components';
-import images from '../../assets/images/cards';
 
-console.log('TEST');
 const styledCardContainer = css`
     max-width: 350px;
-    background: url(${images[1]}) 50% no-repeat;
     font-weight: bold;
     background-size: cover;
     padding: 20px 0;
@@ -21,7 +18,6 @@ const styledCardContainer = css`
 
     :hover {
         cursor: pointer;
-        background: url(${images[2]}) 100% no-repeat;
         background-size: cover;
         border: 10px solid rgba(48,48,48,0.5);
     }
