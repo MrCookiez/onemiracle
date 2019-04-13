@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import JumpButton from '../../components/JumpButton';
 import Card from '../../components/Card';
 import BlockLeft from '../../components/BlockLeft';
 import BlockRight from '../../components/BlockRight';
@@ -52,9 +53,8 @@ const CardRow = styled.div`
 
 const Home = () => (
     <Page>
-        <Hero title={title} subTitle={subTitle} />
+        <Hero title={title} subTitle={subTitle} />  
         <BlockContainer>
-            
             <CardSection>
                 {cards.map((card, index) => {
                     return (
@@ -75,6 +75,7 @@ const Home = () => (
             })}
 
         </BlockContainer>
+        <JumpButton />
         <Footer />
     </Page>
 );
