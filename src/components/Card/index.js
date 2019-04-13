@@ -30,25 +30,7 @@ const StyledLink = styled(NavLink)`
     ${styles.styledLink}
 `;
 
-const Red = {
-    border: '3px solid red',
-    background: `url(${images[1]}) 50% no-repeat`,
-    backgroundSize: 'cover',
-};
-
-const Blue = {
-    border: '3px solid #006699',
-    background: `url(${images[1]}) 50% no-repeat`,
-    backgroundSize: 'cover',
-};
-
-const Yellow = {
-    border: '3px solid gold',
-    background: `url(${images[2]}) 50% no-repeat`,
-    backgroundSize: 'cover',
-};
-
-const Card = ({ id, cardImg, cardTitle, cardText, to }) => {
+const Card = ({ id, cardTitle, cardText, to }) => {
     return (
         <CardContainer key={id} bgImg={images[id]} >
             <StyledBlock>
