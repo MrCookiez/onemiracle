@@ -39,9 +39,7 @@ const Hero = ({ title, subTitle, label }) => {
                     <StyledSubTitle subTitle={subTitle} />
                     <StyledJumpArrow />
                 </div>
-                {/* <HeroButton text={label} /> */}
             </HomeHero>
-            {/* <CurrentLocation title={title} /> */}
         </MainHero>
     );
 };

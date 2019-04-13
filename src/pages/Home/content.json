@@ -13,17 +13,17 @@
         {
             "id": "0",
             "type": "card",
-            "cardImg": "",
+            "cardImg": "learn",
             "cardTitle": "ΜΑΘΕ",
-            "cardText": "LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn LearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearnLearn",
+            "cardText": "Ο καλύτερος οδηγός web development στα Ελληνικά! Εδώ μπορείς να μάθεις όλες τις βασικές τεχνολογίες που χρησιμοποιούνται στην καθημερινότητα ενός web developer.",
             "to": "/learn"
         },
         {
             "id": "1",
             "type": "card",
-            "cardImg": "",
+            "cardImg": "teach",
             "cardTitle": "ΔΙΔΑΞΕ",
-            "cardText": "TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach TeachTeachTeachTeachTeachTeach",
+            "cardText": "Αν είσαι φοιτητής, επαγγελματίας ή κατέχεις εμπειρία σε οποιοδήποτε κομμάτι web development. Eδώ μπορείς να μοιραστείς τις γνώσεις σου και να συνεισφέρεις στην κοινότητα του onemiracle",
             "to": "/learn"
         },
         {
@@ -31,7 +31,7 @@
             "type": "card",
             "cardImg": "",
             "cardTitle": "ΕΡΓΑΣΙΑ",
-            "cardText": "Freelance - Job Guide",
+            "cardText": "Είσαι έτοιμος να εφαρμόσεις τις γνώσεις σου με ανταμοιβή? Εδώ θα βρείς ένα πλήρη οδηγό, αλλά πού και πως μπορείς να ξεκινήσεις να εργάζεσαι στο κόσμο του web development",
             "to": "/learn"
         }
     ],
@@ -48,7 +48,7 @@
             "id": "1",
             "type": "right",
             "heading": "ΜΑΘΗΜΑΤΑ - CSS",
-            "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
+            "paragraph": "Το CSS είναι μια γλώσσα που περιγράφει τη μορφοποίηση ενός εγγράφου HTML. Το CSS περιγράφει τον τρόπο με τον οποίο θα παρουσιαστούν στο φυλλομετρητή τα στοιχεία της γλώσσας HTML. Το CSS προέρχεται από τα αρχικά των λέξεων Cascading Style Sheets Το CSS καθορίζει τον τρόπο με τον οποίο τα στοιχεία της HTML θα αναπαρασταθούν σε οθόνη, σε χαρτί ή σε άλλα μέσα.",
             "techLogo": "cssLogo",
             "to": "/css-lessons"
         },
@@ -56,7 +56,7 @@
             "id": "2",
             "type": "left",
             "heading": "ΜΑΘΗΜΑΤΑ - JAVASCRIPT",
-            "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
+            "paragraph": "Η JavaScript (JS) είναι μια ελαφριά γλώσσα προγραμματισμού, που δεν χρειάζεται μεταγλώτισση (compailation). Ενώ είναι κυρίως γνωστή ως γλώσσα σενάριου (scripting language) για ιστοσελίδες πλέον μπορεί να χρησημοποιηθεί και στο BACKEND π.χ. node.js.",
             "techLogo": "jsLogo",
             "to": "/javascript-lessons"
         },
@@ -64,17 +64,17 @@
             "id": "3",
             "type": "right",
             "heading": "ΜΑΘΗΜΑΤΑ - PHP",
-            "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
+            "paragraph": "Η PHP (PHP: Hypertext Preprocessor) είναι μία server side γλώσσα προγραμματισμού δηλαδή χρησιμοποιείτε στο BACKEND, για δημιουργία ιστοσελίδων με δυναμικό περιεχόμενο. Το WordPress, το μεγαλύτερο σύστημα blog στον κόσμο αλλά και το Facebook δημιουργήθηκαν με τη PHP.",
             "techLogo": "jsLogo",
-            "to": "/javascript-lessons"
+            "to": "/php-lessons"
         },
         {
             "id": "4",
             "type": "left",
             "heading": "ΜΑΘΗΜΑΤΑ - MySQL",
-            "paragraph": "Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.",
+            "paragraph": "Η mySQL (Structured Qurey Language) είναι μια γλωσσα διαχείρισης σχεσιακών βάσεων δεδομένων, που αποτελεί συλλογή δεδομένων σε πίνακες για την επεξεργασία και γενικά την διαχείριση των δεδομένων μίας ιστοσελίδας ή μίας εφαρμογής.",
             "techLogo": "jsLogo",
-            "to": "/javascript-lessons"
+            "to": "/mysql-lessons"
         }
     ]
 

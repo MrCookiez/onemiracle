@@ -14,4 +14,16 @@ const styledCodeContainer = css`
     text-align: left;
 `;
 
-export { styledCodeContainer }
+const cardRow = css`
+    margin:  0 auto 80px ;
+    display: inline-grid;
+    grid-template-columns: 350px auto 50px;
+    
+
+    @media(max-width: 768px){
+        grid-template-columns: auto;
+        margin: 10px 10px;
+    }
+`;
+
+export { styledCodeContainer, cardRow }

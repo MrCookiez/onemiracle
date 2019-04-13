@@ -41,7 +41,6 @@ const styledHeading = css`
 
 const styledParagraph = css`
     padding: 10px 0;
-    text-align: justify;
     letter-spacing: 1px;
     line-height: 1.1;
 `;
