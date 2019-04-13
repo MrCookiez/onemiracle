@@ -11,7 +11,6 @@ const styledBlockRight = css`
 
 const styledSubContainer = css`
     width: 60%;
-    text-align: right;
     margin: auto;
     display: flex;
     width: 60%;
@@ -28,6 +27,7 @@ const stylesText = css`
 `;
 
 const styledHeading = css`
+    text-align: right;
     padding-bottom: 20px;
     border-bottom: solid 2px rgba(255, 181, 48, 0.5);
     text-transform: uppercase;
@@ -38,7 +38,7 @@ const styledHeading = css`
 `;
 
 const styledParagraph = css`
-    text-align: justify;
+    text-align: left;
     letter-spacing: 1px;
     line-height: 1.1;
 `;

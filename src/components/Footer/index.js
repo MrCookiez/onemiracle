@@ -5,9 +5,6 @@ import { facebook, youtube, instagram } from '../../assets/images/social-media';
 
 const Container = styled.div`
     ${styles.styledContainer};
-    h4 {
-        letter-spacing: 10px;
-    }
 `;
 
 const SubContainer = styled.div`
@@ -23,14 +20,7 @@ const Divider = styled.hr`
 `;
 
 const SocialMedia = styled.img`
-    margin: 10px;
-    padding: 5px;
-    max-width: 60px;
-
-    @media(max-width: 768px){
-        margin: 5px;
-        padding: 2px;
-    }
+    ${styles.styledSocialMedia};
 `;
 
 const Credits = styled.div`
@@ -54,7 +44,7 @@ const Footer = () => (
             </Column>
             <Column>
                 <a href="#">Instagram
-                    <SocialMedia src={instagram} alt="Insta" />    
+                    <SocialMedia src={instagram} alt="Insta" />
                 </a>
             </Column>
         </SubContainer>

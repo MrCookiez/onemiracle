@@ -4,9 +4,12 @@ import bgImgFooter from '../../assets/images/footer/bgfooter.svg';
 const styledContainer = css`
     padding: 50px 40px;
     color: #fff;
-    background: linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0.2)), url(${bgImgFooter}) no-repeat;
+    background: linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0.2));
     background-size: cover;
     margin: auto;
+    h4 {
+        letter-spacing: 10px;
+    }
 `;
 
 const styledSubContainer = css`
@@ -34,4 +37,15 @@ const styledCredits = css`
     }
 `;
 
-export default { styledContainer, styledSubContainer, styledDivider, styledColumn, styledCredits };
+const styledSocialMedia = css`
+    margin: 10px;
+    padding: 5px;
+    max-width: 60px;
+
+    @media(max-width: 768px){
+        margin: 5px;
+        padding: 2px;
+    }
+`;
+
+export default { styledContainer, styledSubContainer, styledDivider, styledColumn, styledCredits, styledSocialMedia };
