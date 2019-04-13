@@ -1,14 +1,15 @@
 import { css } from 'styled-components';
 import images from '../../assets/images/cards';
 
+console.log('TEST');
 const styledCardContainer = css`
     max-width: 350px;
-    background: url(${images[0]}) 50% no-repeat;
+    background: url(${images[1]}) 50% no-repeat;
     font-weight: bold;
     background-size: cover;
     padding: 20px 0;
     border: 10px solid rgba(48,48,48,0.5);;
-    transition: all .6s;
+    transition: ease-in .6s;
     color: #fff;
     -webkit-box-shadow: inset 0px 30px 224px 23px rgba(0,0,0,0.52);
     -moz-box-shadow: inset 0px 30px 224px 23px rgba(0,0,0,0.52);
@@ -54,15 +55,18 @@ const styledTitle = css`
 
 const styledCardDesc = css`
     letter-spacing: 2px;
-    
+    text-align: left;
     @media(max-width: 768px){
         display: none;
     }
 `;
 
 const styledLink = css`
-    color: #555;
-    transition: all .6s;  
+    color: #fff;
+    transition-timing-function: ease;
+    :hover {
+        color: #29A1CB;
+    }
     :after {
         content: '';
         display: inline-block;
@@ -70,8 +74,8 @@ const styledLink = css`
         margin-left: 10px;
         width: 6px;
         height: 6px;
-        border-top: 2px solid #FFB530;
-        border-right: 2px solid #FFB530;
+        border-top: 2px solid #006699;
+        border-right: 2px solid #006699;
         -moz-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);

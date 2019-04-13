@@ -59,7 +59,6 @@ const Home = () => (
                 {cards.map((card, index) => {
                     return (
                         <CardRow key={index}>
-
                             <Card  cardTitle={card.cardTitle} cardText={card.cardText} />
                         </CardRow>
                     )    
@@ -69,8 +68,8 @@ const Home = () => (
             {content.map((item, index) => {
                 return (
                     <div key={index}>
-                        { item.type === 'left' && <BlockLeft techLogo={blockImages[item.id]} heading={item.heading} to={item.to} /> }
-                        { item.type === 'right' && <BlockRight techLogo={blockImages[item.id]} heading={item.heading} to='/' /> }
+                        { item.type === 'left' && <BlockLeft techLogo={blockImages[item.id]} heading={item.heading} paragraph={item.paragraph} to={item.to} /> }
+                        { item.type === 'right' && <BlockRight techLogo={blockImages[item.id]} paragraph={item.paragraph} heading={item.heading} to={item.to} /> }
                     </div>
                 )
             })}
