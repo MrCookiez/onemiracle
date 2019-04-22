@@ -58,7 +58,7 @@
             "heading": "ΜΑΘΗΜΑΤΑ - JAVASCRIPT",
             "paragraph": "Η JavaScript (JS) είναι μια ελαφριά γλώσσα προγραμματισμού, που δεν χρειάζεται μεταγλώτισση (compailation). Ενώ είναι κυρίως γνωστή ως γλώσσα σενάριου (scripting language) για ιστοσελίδες πλέον μπορεί να χρησημοποιηθεί και στο BACKEND π.χ. node.js.",
             "techLogo": "jsLogo",
-            "to": "/javascript-lessons"
+            "to": "/js-lessons"
         },
         {
             "id": "3",

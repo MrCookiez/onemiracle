@@ -7,6 +7,7 @@ const styledContainer = css`
     background: linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0.2));
     background-size: cover;
     margin: auto;
+    text-align: center;
     h4 {
         letter-spacing: 10px;
     }

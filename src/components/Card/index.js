@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import images from '../../assets/images/cards';
@@ -40,6 +41,10 @@ const Card = ({ id, cardTitle, cardText, to }) => {
             <StyledLink to='/'>ΠΕΡΙΣΣΟΤΕΡΑ</StyledLink>
         </CardContainer>
     );
+};
+
+Card.prototype = {
+    to: PropTypes.string.isRequired,
 };
 
 export default Card;

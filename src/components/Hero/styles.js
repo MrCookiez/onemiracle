@@ -10,7 +10,7 @@ const stylesHero = css`
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 550px;
+        height: ${props => `${props.height}px`};
         -webkit-box-shadow: inset 0px 30px 224px 23px rgba(0,0,0,0.52);
         -moz-box-shadow: inset 0px 30px 224px 23px rgba(0,0,0,0.52);
         box-shadow: inset 0px 30px 224px 23px rgba(0,0,0,0.52);
