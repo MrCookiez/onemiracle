@@ -42,16 +42,20 @@ const Login = (props) => {
     
     return (
         <div>
-        <Hero height={300} title='LOG IN' />
+        <Hero height={300} title='SIGN IN' />
         <Container>
             <Row>
                 <StyledCol lg={6} sm={12} >
                     <StyledForm>
-                    <FormControl margin="normal" required fullWidth>
+                    <FormControl required fullWidth>
+                        <InputLabel htmlFor="username">Username</InputLabel>
+                        <Input id="username" name="username" autoComplete="username" autoFocus />
+                    </FormControl>
+                    <FormControl required fullWidth>
                         <InputLabel htmlFor="email">Email Address</InputLabel>
                         <Input id="email" name="email" autoComplete="email" autoFocus />
                     </FormControl>
-                    <FormControl margin="normal" required fullWidth>
+                    <FormControl required fullWidth>
                         <InputLabel htmlFor="password">Password</InputLabel>
                         <Input name="password" type="password" id="password" autoComplete="current-password" />
                     </FormControl>
