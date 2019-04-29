@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation';
 // Main Pages
+import Login from './pages/Login';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -37,6 +38,7 @@ class App extends Component {
                 <Route path='/js-lessons' component={JsLessons} >ΜΑΘΗΜΑΤΑ - JavaScript</Route>
                 <Route path='/php-lessons' component={PhpLessons} >ΜΑΘΗΜΑΤΑ - PHP</Route>
                 <Route path='/mysql-lessons' component={MySqlLessons} >ΜΑΘΗΜΑΤΑ - mySQL</Route>
+                <Route path='/login' component={Login} >Login - OneMiracle</Route>
                 <Route component={NotFound} />
               </Switch>
             </div>
