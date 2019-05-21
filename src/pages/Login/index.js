@@ -42,7 +42,7 @@ const StyledImg = styled.img`
 `;
 
 const Login = (props) => {
-
+    const { classes } = props
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -55,11 +55,8 @@ const Login = (props) => {
                     <StyledForm onSubmit={e => e.preventDefault() && false}>
 
                         <FormControl required fullWidth>
-
-                            <InputLabel htmlFor="name">Username</InputLabel>
-                            <Input
-                                id="name"
-                                name="name" autoComplete="name" autoFocus value={email} onChange={e => setEmail(e.target.value)} />
+                            <InputLabel htmlFor="email">Email Address</InputLabel>
+						    <Input id="email" name="email" autoComplete="off" autoFocus value={email} onChange={e => setEmail(e.target.value)} />
                         </FormControl>
 
                         <FormControl required fullWidth>
@@ -96,13 +93,13 @@ const Login = (props) => {
     )
 
     async function login() {
-        try {
-            await firebase.login(email, password);
-            props.history.replace('/home')
-        } catch(error) {
-            alert(error.message);
-        }
-    }
+		try {
+			await firebase.login(email, password)
+			props.history.replace('/dashboard')
+		} catch(error) {
+			alert(error.message)
+		}
+	}
 }
 
 Login.propTypes = {

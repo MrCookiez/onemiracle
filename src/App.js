@@ -26,17 +26,17 @@ import './assets/css/main.css';
 import { CircularProgress } from '@material-ui/core';
 
 
-const App = () => {
+function App() {
 
     const [firebaseInitialized, setFirebaseInitialized] = useState(false)
 
     useEffect(() => {
-        firebase.isInitialized().then(val => {
-          setFirebaseInitialized(val)
-        })
+      firebase.isInitialized().then(val => {
+        setFirebaseInitialized(val)
+      })
     })
 
-    return !firebaseInitialized !== false ? (
+    return firebaseInitialized !== false ? (
         <Router>
         <div className="App">
             <Navigation />
@@ -61,9 +61,8 @@ const App = () => {
             </div>
         </div>
     </Router>
-    ) : (
+    ) :
       <div id='loader'><CircularProgress /></div>
-    );
 };
 
 export default App;
