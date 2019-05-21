@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-amazing-grid';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 // Config
 import firebase from '../../config/firebase';
 // Remote Imports
@@ -52,19 +52,19 @@ const Login = (props) => {
         <Container>
             <Row>
                 <StyledCol lg={6} sm={12} >
-                    <StyledForm>
+                    <StyledForm onSubmit={e => e.preventDefault() && false}>
 
                         <FormControl required fullWidth>
 
-                            <InputLabel htmlFor="username">Username</InputLabel>
+                            <InputLabel htmlFor="name">Username</InputLabel>
                             <Input
-                                id="username"
-                                name="username" autoComplete="username" autoFocus value={email} onChange={e => setEmail(e.target.value)} />
+                                id="name"
+                                name="name" autoComplete="name" autoFocus value={email} onChange={e => setEmail(e.target.value)} />
                         </FormControl>
 
                         <FormControl required fullWidth>
                             <InputLabel htmlFor="password">Password</InputLabel>
-                            <Input name="password" type="password" id="password" autoComplete="current-password" value={password}  onChange={e => setPassword(e.target.value)} />
+                            <Input name="password" type="password" id="password"  value={password}  onChange={e => setPassword(e.target.value)} />
                         </FormControl>
 
                         <FormControlLabel
@@ -78,17 +78,18 @@ const Login = (props) => {
                             variant="contained"
                             color="primary"
                             onClick={login}
+                            Login
                         >
                             Sign in
                         </Button>
                     </StyledForm>
                 </StyledCol>
 
-                <StyledCol lg={6} sm={12}>
+                {/* <StyledCol lg={6} sm={12}>
 
                     <StyledImg src={sideImage} alt='green leaf connect' />
 
-                </StyledCol>
+                </StyledCol> */}
             </Row>
         </Container>
         </div>

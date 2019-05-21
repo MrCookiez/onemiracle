@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-amazing-grid';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 // Config
 import firebase from '../../config/firebase';
 // Remote Imports
@@ -24,19 +24,10 @@ const MainCol = styled.div`
 `;
 
 const Register = (props) => {
-
+    const { classes } = props;
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
-    async function onRegister() {
-        try {
-            await firebase.login(name, email, password);
-            props.history.replace('/home')
-        } catch(error) {
-            alert(error.message);
-        }
-    }
 
     return (
         <MainCol>
@@ -46,12 +37,12 @@ const Register = (props) => {
                     <Col lg={6} sm={12} >
                         <form css={styles.form}>
                         <FormControl required fullWidth>
-                            <InputLabel htmlFor="username">Username</InputLabel>
-                            <Input id="username" name="username" autoComplete="username" autoFocus value={name} onChange={e => setName(e.target.value)}/>
+                            <InputLabel htmlFor="name">Username</InputLabel>
+                            <Input id="name" name="name" autoComplete="name" autoFocus value={name} onChange={e => setName(e.target.value)}/>
                         </FormControl>
                         <FormControl required fullWidth>
                             <InputLabel htmlFor="email">Email Address</InputLabel>
-                            <Input id="email" name="email" autoComplete="email" autoFocus value={email} onChange={e => setEmail(e.target.value)}/>
+                            <Input id="email" name="email" autoFocus value={email} onChange={e => setEmail(e.target.value)}/>
                         </FormControl>
                         <FormControl required fullWidth>
                             <InputLabel htmlFor="password">Password</InputLabel>
@@ -72,13 +63,22 @@ const Register = (props) => {
                         </Button>
                     </form>
                     </Col>
-                    <Col lg={6} sm={12} >
+                    {/* <Col lg={6} sm={12} >
                         <img css={styles.image} src={sideImage} alt='green leaf connect' />
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </MainCol>
-    );
+    )
+
+    async function onRegister() {
+        try {
+            await firebase.login(name, email, password);
+            props.history.replace('/dashboard')
+        } catch(error) {
+            alert(error.message);
+        }
+    }
 }
 
 export default withRouter(Register);

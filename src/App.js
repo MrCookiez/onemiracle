@@ -1,7 +1,11 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+// import { BrowserRouter, Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navigation from './components/Navigation';
+// Config
+import firebase from './config/firebase';
 // Main Pages
+import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Home from './pages/Home';
@@ -19,11 +23,21 @@ import MySqlLessons from './pages/Lessons/Mysql';
 
 import NotFound from "./pages/NotFound";
 import './assets/css/main.css';
+import { CircularProgress } from '@material-ui/core';
 
-class App extends Component {
-  render() {
-    return (
-        <BrowserRouter>
+
+const App = () => {
+
+    const [firebaseInitialized, setFirebaseInitialized] = useState(false)
+
+    useEffect(() => {
+        firebase.isInitialized().then(val => {
+          setFirebaseInitialized(val)
+        })
+    })
+
+    return !firebaseInitialized !== false ? (
+        <Router>
         <div className="App">
             <Navigation />
             <div>
@@ -41,13 +55,15 @@ class App extends Component {
                 <Route path='/mysql-lessons' component={MySqlLessons} >ΜΑΘΗΜΑΤΑ - mySQL</Route>
                 <Route path='/login' component={Login} >Login - OneMiracle</Route>
                 <Route path='/register' component={Register} >Register - OneMiracle</Route>
+                <Route path='/dashboard' component={Dashboard} >Dashboard - OneMiracle</Route>
                 <Route component={NotFound} />
               </Switch>
             </div>
         </div>
-        </BrowserRouter>
+    </Router>
+    ) : (
+      <div id='loader'><CircularProgress /></div>
     );
-  }
-}
+};
 
 export default App;

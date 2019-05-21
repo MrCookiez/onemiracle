@@ -53,7 +53,7 @@ const CardRow = styled.div`
 
 const Home = () => (
     <Page>
-        <Hero title={title} subTitle={subTitle} />  
+        <Hero title={title} subTitle={subTitle} />
         <BlockContainer>
             <CardSection>
                 {cards.map((card, index) => {
@@ -61,10 +61,9 @@ const Home = () => (
                         <CardRow key={index}>
                             <Card id={card.id} cardTitle={card.cardTitle} cardText={card.cardText} />
                         </CardRow>
-                    )    
+                    )
                 })}
             </CardSection>
-
             {content.map((item, index) => {
                 return (
                     <div key={index}>
