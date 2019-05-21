@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Container, Row, Col } from 'react-amazing-grid'
+import { Container, Row, Col } from 'react-amazing-grid';
 // Remote Imports
 import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
@@ -38,8 +38,19 @@ const StyledImg = styled.img`
     }
 `;
 
-const Login = (props) => {
-    
+const Login = () => {
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    async function login() {
+        try {
+            await firebase.login(email, password);
+        } catch(error) {
+            alert(error.message);
+        }
+    }
+
     return (
         <div>
         <Hero height={300} title='SIGN IN' />
@@ -47,34 +58,41 @@ const Login = (props) => {
             <Row>
                 <StyledCol lg={6} sm={12} >
                     <StyledForm>
-                    <FormControl required fullWidth>
-                        <InputLabel htmlFor="username">Username</InputLabel>
-                        <Input id="username" name="username" autoComplete="username" autoFocus />
-                    </FormControl>
-                    <FormControl required fullWidth>
-                        <InputLabel htmlFor="email">Email Address</InputLabel>
-                        <Input id="email" name="email" autoComplete="email" autoFocus />
-                    </FormControl>
-                    <FormControl required fullWidth>
-                        <InputLabel htmlFor="password">Password</InputLabel>
-                        <Input name="password" type="password" id="password" autoComplete="current-password" />
-                    </FormControl>
-                    <FormControlLabel
-                        control={<Checkbox value="remember" color="primary" />}
-                        label="Remember me"
-                    />
-                    <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        color="primary"
-                    >
-                        Sign in
-                    </Button>
-                </StyledForm>
+
+                        <FormControl required fullWidth>
+
+                            <InputLabel htmlFor="username">Username</InputLabel>
+                            <Input
+                                id="username"
+                                name="username" autoComplete="username" autoFocus value={email} onChange={e => setEmail(e.target.value)} />
+                        </FormControl>
+
+                        <FormControl required fullWidth>
+                            <InputLabel htmlFor="password">Password</InputLabel>
+                            <Input name="password" type="password" id="password" autoComplete="current-password" value={password}  onChange={e => setEmail(e.target.value)} />
+                        </FormControl>
+
+                        <FormControlLabel
+                            control={<Checkbox value="remember" color="primary" />}
+                            label="Remember me"
+                        />
+
+                        <Button
+                            type="submit"
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                            onClick={login}
+                        >
+                            Sign in
+                        </Button>
+                    </StyledForm>
                 </StyledCol>
-                <StyledCol lg={6} sm={12} >
+
+                <StyledCol lg={6} sm={12}>
+
                     <StyledImg src={sideImage} alt='green leaf connect' />
+
                 </StyledCol>
             </Row>
         </Container>
