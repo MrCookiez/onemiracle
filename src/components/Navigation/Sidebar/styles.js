@@ -17,7 +17,7 @@ var styles = {
     width: '24px'
   },
   bmCross: {
-    background: '#bdc3c7',   
+    background: '#bdc3c7',
   },
   bmMenuWrap: {
     position: 'fixed',

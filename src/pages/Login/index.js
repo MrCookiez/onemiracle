@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-amazing-grid';
+import { withRouter } from 'react-router-dom';
+// Config
+import firebase from '../../config/firebase';
 // Remote Imports
 import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
@@ -38,18 +41,10 @@ const StyledImg = styled.img`
     }
 `;
 
-const Login = () => {
+const Login = (props) => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
-    async function login() {
-        try {
-            await firebase.login(email, password);
-        } catch(error) {
-            alert(error.message);
-        }
-    }
 
     return (
         <div>
@@ -69,7 +64,7 @@ const Login = () => {
 
                         <FormControl required fullWidth>
                             <InputLabel htmlFor="password">Password</InputLabel>
-                            <Input name="password" type="password" id="password" autoComplete="current-password" value={password}  onChange={e => setEmail(e.target.value)} />
+                            <Input name="password" type="password" id="password" autoComplete="current-password" value={password}  onChange={e => setPassword(e.target.value)} />
                         </FormControl>
 
                         <FormControlLabel
@@ -97,11 +92,20 @@ const Login = () => {
             </Row>
         </Container>
         </div>
-    );
+    )
+
+    async function login() {
+        try {
+            await firebase.login(email, password);
+            props.history.replace('/home')
+        } catch(error) {
+            alert(error.message);
+        }
+    }
 }
 
 Login.propTypes = {
     classes: PropTypes.object.isRequired,
   };
 
-export default Login;
+export default withRouter(Login);
