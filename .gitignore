@@ -35,3 +35,4 @@ yarn-error.log*
 design-insipation/
 package-lock.json
 src/temp-code-.txt
+.vercel
